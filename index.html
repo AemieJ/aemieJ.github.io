@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Aemie Jariwala</h1>
+            <h2>Python Developer</h2>
+            <a href="./resume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am a Computer Engineering undergrad currently studying at SVNIT, Surat.
+                        I am a python developer with concepts familiarized in Django and handling the
+                        databases with Django . I have also tried out machine learning and computer vision
+                        and have made various projects in computer vision . 
+                    </p><br>
+                    <p>
+                       My core qualifications includes  Leadership Skills , Patient learner , good communications 
+                       and highly curious about ML and CV.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Education</h2>
+        <div id="experience-timeline">
+            <div data-date="July 2018 – Present">
+                <h3>Sardar Vallabhai National Institute of Technology , Surat</h3>
+                <h4>Undergraduate</h4>
+                <p>
+                    <ul>
+                        <li> DataCamp: R programming </li>
+                        <li> Coursera: Machine Learning Course</li>
+                        <li> Udemy: Computer Vision A-Z </li>
+                        <li> Coursera: Sequence Models</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-date="March 2012 – March 2018">
+                <h3>The Millennium School , Dubai</h3>
+                <h4>Student</h4>
+                <p>
+                    <ul>
+                        <li> Board Exams : 95.4% </li>
+                        <li> Among 0.1 top percents in Physics Boards</li>
+                        <li> First Place In Website Development</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="skills" class="background">
+        <h2 class="heading">Skills</h2>
+        <div class="container">
+            <div class="chart" data-percent="90">Python</div>
+            <div class="chart" data-percent="60">Javascript</div>
+            <div class="chart" data-percent="75">CPP</div>
+            <div class="chart" data-percent="80">HTML</div>
+            <div class="chart" data-percent="80">CSS</div>
+            <div class="chart" data-percent="80">Bootstrap</div>
+            <div class="chart" data-percent="40">SASS</div>
+            <div class="chart" data-percent="74">Django</div>
+            <div class="chart" data-percent="40">Flask</div>
+            <div class="chart" data-percent="78">C</div>
+            <div class="chart" data-percent="24">GO</div>
+            <div class="chart" data-percent="20">Flutter</div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="./bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                scaleColor: "#ecf0f1",
+                lineWidth: 20,
+                lineCap: 'butt',
+                barColor: '#1abc9c',
+                trackColor: "#ecf0f1",
+                size: 160,
+                animate: 500
+            });
+        });
+                </script>
+    <!-- End #skills -->
+    
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="column project no-image">
+                    <div class="project-info">
+                        <h3>Filters using Dlib and Computer Vision</h3>
+                        <p>
+                                The following python files will be able to execute different filters . 
+                                In snapchat , instagram , photobooth , etc there are many different filters which are based on 
+                                facial recognition .
+
+                                The code is open source and as such , the code will execute a filter on your eyes . I have used opencv , dlib and numpy to create this filter . 
+                        </p>
+                        <a href="https://github.com/AemieJ/filter">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="column project no-image">
+                    <div class="project-info">
+                        <h3>Pixel Sorting And Audio Visualizer Creation</h3>
+                        <p>
+                                The project comprises of three individual different tasks . Initially , 
+                                it takes a picture into account and then a pixel-sort algorithm is applied to it after the picture is sorted , 
+                                for every pixels its sound frequency is calculated and stored in an audio file . The last part of the project 
+                                includes creating an audio-visualizer.
+                        </p>
+                        <a href="https://github.com/AemieJ/art-with-python">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="column project no-image">
+                    <div class="project-info">
+                        <h3>Photoshop/Snapchat Filter Replication</h3>
+                        <p>
+                                Effects for different images including the negative effect , the 3D retro effect , technically know as anagylph and the sketch effect can be achieved through my code currently .
+
+                                These effects are similar to those of photo booth , snapchat filters and photoshop. 
+                                All these effects will be saved in a separate folder.
+                        </p>
+                        <a href="https://github.com/AemieJ/Effects">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+    
+            <!-- Projects Above -->
+            <br><br><br>
+            <a id="view-more-projects" href="#">View More Projects</a>
+            <div id="more-projects" class="row">
+                <div class="column project no-image">
+                    <div class="project-info">
+                        <h3>Coyle - Website using django as backend framework</h3>
+                        <p>
+                                The project was primirarly focused on developing a website and able to learn the server-side 
+                                interaction using Django as the backend framework . The front-end of the website was accomplished using 
+                                bootstrap only . Apart from this , for making the website responsive jQuery was used and 
+                                AJAX request using jQuery was implemented to communicate on the sever-side .
+                        </p>
+                        <a href="https://github.com/AemieJ/webDev">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="column project no-image">                    
+                    <div class="project-info">
+                        <h3>Contour Tracking - Object Tracking </h3>
+                        <p>
+                                The project used the object detection API to detect the object in a moving video . To track the detected object , the contour tracking algorithm was implemented with perspective transform and coordinates of the specific object detected were maintained 
+                                in a CSV file as it were tracked in different frames . It was made to be a real-time application by using already trained weights . 
+                        </p>
+                        <a href="https://github.com/AemieJ/Object_detect_and_track">View Project</a>
+                    </div>
+                    <!-- End .project-info -->                
+                </div>
+                <div class="column project no-image">
+                    <div class="project-info">
+                        <h3>Image Recognition Using CNN & Tranfer Learning</h3>
+                        <p>
+                                Multi class image classifier made using keras and tensorflow implemented on the Caltech 101 Dataset.
+                                This project focused on training the entire dataset first on a convolutional neural network and using weights of an already trained model(Inception-V3) .After reaching an accuracy of 90% + on 
+                                both training as well as test dataset , the entire machine learning model was ready.
+                        </p>
+                        <a href="https://github.com/AemieJ/AMOC-ImageRecognition">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+    <div id="contact" class="background">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Aemie Jariwala
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/AemieJ" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aemie-jariwala-36a682179/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/AemieJariwala" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
