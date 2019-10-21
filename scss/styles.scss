@@ -572,7 +572,6 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -585,7 +584,7 @@ footer {
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px;
+    
 }
 
 .project-image {
@@ -611,12 +610,6 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
-}
-
-.column {
-    float: left;
-    margin: 15px;
-    width: 30%;
 }
 
 .no-image {
@@ -802,7 +795,6 @@ footer {
     .vtimeline-content {
         margin-left: 70px;
     }
-
 }
 
 // Medium Devices
@@ -932,5 +924,4 @@ footer {
             padding: 5px 10px;
         }
     }
-
 }
